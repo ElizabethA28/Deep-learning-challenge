@@ -1,0 +1,18 @@
+Deep Learning Project: Charity Funding 
+
+Overview 
+
+The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. 
+
+Results
+To begin the data processing we removed any irrelevant information. After dropping EIN and
+NAME the remaining columns were to be considered features for the model. Name was added
+back into the second test for binning purposes. The data was then split for training and testing
+sets. The target variable for the model was labeled “IS_SUCCESSFUL” and has the value of 1
+for yes and 0 for no. APPLICATION data was analyzed and “CLASSIFICATION value was used
+for binning. We used several data points as a cutoff to bin “rare” variables together with the new
+value of “Other” for each unique value. Categorical variables were encoded by get_dummies()
+after checking to see if the binning was successful.
+Three layers were selected in total after applying neutral networks. 
+
+Overall, deep learning models should have multiple layers, since its machine based it teaches the computer to filter the layers.
